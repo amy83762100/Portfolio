@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pei-Yi Lin" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="src/img/logo.png" />
+    <script defer src="src/js/controller.js"></script>
+    <title>Pei-Yi Lin | Front End Web Developer</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#section-about" class="navigation__link"
+              ><span>01</span>About Me</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section-skills" class="navigation__link"
+              ><span>02</span>Skills</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section-projects" class="navigation__link"
+              ><span>03</span>Project</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section-contact" class="navigation__link"
+              ><span>04</span>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="header__navigation">
+      <a href="#">
+        <img src="src/img/logo_white.png" alt="Logo" class="header__logo" />
+      </a>
+      <ul class="menu">
+        <li class="nav_item">
+          <a class="nav_link" href="#section-about">About Me</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="#section-skills">My Skills</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="#section-projects">Projects</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="#section-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <canvas> </canvas>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Hi, I'm Pei-Yi</span>
+          <span class="heading-primary--sub">A Front End Web Developer</span>
+        </h1>
+
+        <a href="#section-about" class="toSectionAbout">          
+          <svg class="icon-cheveron-down" title="HTML">
+            <use href="./src/img/sprite.svg#icon-cheveron-down"></use>
+          </svg></a
+        >
+      </div>
+    </header>
+    <main>
+      <section id="section-about" class="section-about">
+        <h2 class="heading-secondary">About Me</h2>
+        <p class="paragraph">
+          <em
+            ><strong>Programming is like an endless game that I am passionately engaged
+            in.</strong>
+          </em>
+        </p>
+        <p class="paragraph">
+          I am currently a computer programming major at Seneca and looking for
+          an internship opportunity in a front-end web developer position. I
+          have on-hand experience efficiently coding websites using modern HTML,
+          CSS, and JavaScript. The project I recently finished is about creating
+          a single-page website for a yoga studio,
+          <a href="https://viyoga.netlify.app/">https://viyoga.netlify.app/</a>.
+        </p>
+        <p class="paragraph">
+          I have completed my master's degree in Engineering Science at National
+          Cheng Kung University in Taiwan. Educational background in computer
+          programing and engineering science provided me a broad knowledge of
+          engineer concepts, strong problem-solving ability, and innovative
+          thinking.
+        </p>
+        <p class="paragraph">
+          Programing is what keeps me up at night. I am really passionate about
+          creating beautiful, powerful, state-of-the-art websites and share them
+          with the world.
+        </p>
+      </section>
+      <hr />
+      <section class="section-skills" id="section-skills">
+        <h2 class="heading-secondary">Skills</h2>
+        <div class="skills-icons-box">
+          <div class="icon-box">
+            <svg class="icon-html5 icon">
+              <use href="./src/img/sprite.svg#icon-html5"></use>
+            </svg>
+            <p class="paragraph icon-title">HTML</p>
+          </div>
+          <div class="icon-box">
+          <svg class="icon-css3 icon">
+            <use href="./src/img/sprite.svg#icon-css3"></use>
+          </svg>
+          <p class="paragraph icon-title">CSS</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-sass icon">
+            <use href="./src/img/sprite.svg#icon-sass"></use>
+          </svg>
+          <p class="paragraph icon-title">Sass</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-javascript icon">
+            <use href="./src/img/sprite.svg#icon-javascript"></use>
+          </svg>
+          <p class="paragraph icon-title">JavaScript</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-node-dot-js icon">
+            <use href="./src/img/sprite.svg#icon-node-dot-js"></use>
+          </svg>
+          <p class="paragraph icon-title">Node.js</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-cplusplus icon">
+            <use href="./src/img/sprite.svg#icon-cplusplus"></use>
+          </svg>
+          <p class="paragraph icon-title">C++</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-oracle icon">
+            <use href="./src/img/sprite.svg#icon-oracle"></use>
+          </svg>
+          <p class="paragraph icon-title">Oracle SQL</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-python icon">
+            <use href="./src/img/sprite.svg#icon-python"></use>
+          </svg>
+          <p class="paragraph icon-title">Python</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-mongodb icon">
+            <use href="./src/img/sprite.svg#icon-mongodb"></use>
+          </svg>
+          <p class="paragraph icon-title">Mongo DB</p>
+        </div>
+        <div class="icon-box">
+          <svg class="icon-react icon">
+            <use href="./src/img/sprite.svg#icon-react"></use>
+          </svg>
+          <p class="paragraph icon-title">React</p>
+        </div>
+        </div>
+      </section>
+      <hr />
+      <section class="section-projects" id="section-projects">
+        <h2 class="heading-secondary">Projects</h2>
+        <div class="project-cards-box">
+          <div class="project-card section--hidden">
+            <img class="project-card-img" src="./src/img/viyoga.jpg" alt="Yoga with Viona Website">
+            <div class="project-card-description">
+              <h3 class="heading-tertiary">Yoga with Viona</h3>
+              <div class="project-card-text">
+                <p class="paragraph-small">A yoga website made for Viniyoga. The website was created with some nice CSS effects to make the website vivid and attractive.</p>
+              </div>
+              <a href="https://viyoga.netlify.app/" target="_blank"><button class="project-card-btn">Visit Website</button></a>
+              <div class="projects-icons-box">
+                <svg class="icon-html5" title="HTML">
+                  <use href="./src/img/sprite.svg#icon-html5"></use>
+                </svg>
+      
+                <svg class="icon-css3" title="CSS">
+                  <use href="./src/img/sprite.svg#icon-css3"></use>
+                </svg>
+      
+                <svg class="icon-sass" title="Sass">
+                  <use href="./src/img/sprite.svg#icon-sass"></use>
+                </svg>
+      
+                <svg class="icon-javascript" title="JavaScript">
+                  <use href="./src/img/sprite.svg#icon-javascript"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-card section--hidden">
+            <img class="project-card-img" src="./src/img/black_Jack.jpg" alt="Blackjack Game">
+            <div class="project-card-description">
+              <h3 class="heading-tertiary">Blackjack Game</h3>
+              <div class="project-card-text">
+              <p class="paragraph-small">A fully functional online BlackJack Game.</p>
+            </div>
+              <a href="http://omnifood.info/Black_Jack/" target="_blank"><button class="project-card-btn">Visit Website</button></a>
+              <div class="projects-icons-box">
+                <svg class="icon-html5" title="HTML">
+                  <use href="./src/img/sprite.svg#icon-html5"></use>
+                </svg>
+      
+                <svg class="icon-css3" title="CSS">
+                  <use href="./src/img/sprite.svg#icon-css3"></use>
+                </svg>
+      
+                <svg class="icon-javascript" title="JavaScript">
+                  <use href="./src/img/sprite.svg#icon-javascript"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card section--hidden">
+            <img class="project-card-img" src="./src/img/forkify.jpg" alt="Forkify App">
+            <div class="project-card-description">
+              <h3 class="heading-tertiary">Forkify App</h3>
+              <div class="project-card-text">
+              <p class="paragraph-small">Forkify is a recipe application with custom recipe uploads, which allows users to search for recipes using the Forkify API. (Udemy course project)</p>
+            </div>
+              <a href="https://forkify-portfolio.netlify.app/" target="_blank"><button class="project-card-btn">Visit Website</button></a>
+              <div class="projects-icons-box">
+                <svg class="icon-html5" title="HTML">
+                  <use href="./src/img/sprite.svg#icon-html5"></use>
+                </svg>
+      
+                <svg class="icon-css3" title="CSS">
+                  <use href="./src/img/sprite.svg#icon-css3"></use>
+                </svg>
+                
+                <svg class="icon-sass" title="Sass">
+                  <use href="./src/img/sprite.svg#icon-sass"></use>
+                </svg>
+
+                <svg class="icon-javascript" title="JavaScript">
+                  <use href="./src/img/sprite.svg#icon-javascript"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-card section--hidden">
+            <img class="project-card-img" src="./src/img/mapty.jpg" alt="Mapty App">
+            <div class="project-card-description">
+              <h3 class="heading-tertiary">Mapty App</h3>
+              <div class="project-card-text">
+              <p class="paragraph-small">Mapty is a fitness tracker allow you quickly record your workout progress. (Udemy course project)</p>
+            </div>
+              <a href="https://mapty-portfolio.netlify.app/" target="_blank"><button class="project-card-btn">Visit Website</button></a>
+              <div class="projects-icons-box">
+                <svg class="icon-html5" title="HTML">
+                  <use href="./src/img/sprite.svg#icon-html5"></use>
+                </svg>
+      
+                <svg class="icon-css3" title="CSS">
+                  <use href="./src/img/sprite.svg#icon-css3"></use>
+                </svg>
+      
+                <svg class="icon-javascript" title="JavaScript">
+                  <use href="./src/img/sprite.svg#icon-javascript"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-card section--hidden">
+            <img class="project-card-img" src="./src/img/omnifood.jpg" alt="Omnifood Website">
+            <div class="project-card-description">
+              <h3 class="heading-tertiary">Omnifood</h3>
+              <div class="project-card-text">
+              <p class="paragraph-small">Single page web app for a fictional Omnifood company. (Udemy course project)</p>
+            </div>
+              <a href="http://omnifood.info/omnifood.info/" target="_blank"><button class="project-card-btn">Visit Website</button></a>
+              <div class="projects-icons-box">
+                <svg class="icon-html5" title="HTML">
+                  <use href="./src/img/sprite.svg#icon-html5"></use>
+                </svg>
+      
+                <svg class="icon-css3" title="CSS">
+                  <use href="./src/img/sprite.svg#icon-css3"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="section-contact" id="section-contact">
+        <h2 class="heading-secondary">Contact</h2>
+        <div class="contact-icons-box">
+          <a href="https://github.com/amy83762100?tab=repositories" target="_blank">
+            <svg class="icon-github">
+              <use href="./src/img/sprite.svg#icon-github"></use>
+            </svg>
+          </a href="https://github.com/amy83762100?tab=repositories">
+          <a href="https://www.linkedin.com/in/pei-yi-lin-2a7aa9186/" target="_blank">
+            <svg class="icon-linkedin">
+              <use href="./src/img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="paragraph">Copyright © 2021 Pei-Yi Lin</p>
+    </footer>
+  </body>
+</html>

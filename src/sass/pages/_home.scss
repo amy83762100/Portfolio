@@ -1,0 +1,32 @@
+.section-about {
+  text-align: center;
+  padding: 7rem 10rem;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+}
+.section-skills {
+  text-align: center;
+  padding: 7rem 0;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+}
+.section-projects {
+  text-align: center;
+  padding: 7rem 0;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+}
+.section-contact {
+  text-align: center;
+  padding: 7rem 0;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

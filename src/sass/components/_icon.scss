@@ -1,0 +1,57 @@
+.skills-icons-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  svg {
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+  }
+}
+.icon {
+  &-box {
+    overflow: hidden;
+  }
+  &-title {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &:hover + &-title {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-icons-box {
+  svg {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 5rem;
+  }
+}
+.projects-icons-box {
+  display: flex;
+  justify-content: flex-end;
+  svg {
+    width: $default-font-size;
+    height: $default-font-size;
+    margin: 0 0.5rem;
+  }
+}
+.icon-cplusplus {
+  fill: #00599c;
+}
+.icon-cheveron-down {
+  fill: $color-white;
+  opacity: 0.6;
+  width: 7rem;
+  height: 7rem;
+  &:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.header {
+  overflow: hidden;
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary-light, 0.8),
+      rgba($color-tertiary-dark, 0.5)
+    ),
+    url(../img/IMG_7847.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.header__navigation {
+  @include respond(phone) {
+    display: none;
+  }
+  position: absolute;
+  width: calc(100% - 6rem);
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem 0 2rem;
+  z-index: 100;
+  &.sticky {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    background-color: rgba($color-tertiary-light, 0.8);
+    .menu__class {
+      backdrop-filter: blur(5px);
+      background-color: rgba($color-tertiary-light, 0.9);
+    }
+  }
+
+  .header__logo {
+    height: 4.75rem;
+    transition: all 0.3s;
+    margin-left: 2rem;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    color: $color-white;
+    list-style: none;
+    font-weight: 300;
+    & > * {
+      margin: 0 2rem;
+    }
+    &__class {
+      list-style: none;
+      position: absolute;
+      top: 0;
+      left: 52%;
+      padding: 0 1.5rem;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 50;
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.58, 0.05, 0.39, 1);
+      &.hidden {
+        display: none;
+      }
+      .nav_item:not(:last-child) {
+        display: block;
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+    .nav_item {
+      .classes__checkbox {
+        display: none;
+        &:checked ~ .menu__class {
+          top: 100%;
+          visibility: visible;
+          height: fit-content;
+          opacity: 1;
+        }
+      }
+
+      .nav_link {
+        &,
+        &:link,
+        &:visited {
+          padding: 1rem 0 0.7rem 0;
+          color: inherit;
+          text-decoration: none;
+          display: block;
+          transition: all 0.3s;
+          border-bottom: 2px solid transparent;
+        }
+        &:hover,
+        &:active {
+          border-bottom: 2px solid $color-white;
+        }
+      }
+    }
+  }
+}
