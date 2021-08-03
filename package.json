@@ -5,27 +5,14 @@
   "browserslist": "last 10 versions",
   "default": "index.html",
   "scripts": {
-    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
-    "devserver": "live-server.cmd",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
-    "prefix:css": "postcss src/css/style.comp.css --use autoprefixer -o src/css/style.prefix.css",
-    "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "build": "parcel build index.html --dist-dir ./dist --public-url ./"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Pei-Yi Lin",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "concat": "^1.0.3",
-    "node-sass": "^5.0.0",
-    "npm-run-all": "^4.1.5",
+    "@parcel/transformer-sass": "^2.0.0-beta.1",
     "parcel": "^2.0.0-beta.1",
-    "postcss": "^8.3.0"
-  },
-  "dependencies": {
-    "postcss-cli": "^8.3.1",
-    "prettier": "^2.3.0"
+    "sass": "^1.34.0"
   }
 }
