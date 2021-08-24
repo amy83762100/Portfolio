@@ -120,8 +120,9 @@ const scrollToEffect = function () {
     });
 
   const scrollSmooth = function (event) {
-    event.preventDefault();
     const id = event.target.getAttribute('href');
+    if (id != /^#/) return;
+    event.preventDefault();
     const coords = document.querySelector(id).getBoundingClientRect();
     window: scrollTo({
       left: coords.left + window.pageXOffset,
@@ -140,7 +141,7 @@ const scrollToEffect = function () {
   document.querySelector('.menu').addEventListener('click', function (event) {
     if (
       event.target.classList.contains('nav_link') &&
-      !event.target.classList.contains('nav_link-btn')
+      !event.target.classList.contains('download__link')
     ) {
       scrollSmooth(event);
     }
