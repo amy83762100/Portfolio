@@ -6,12 +6,14 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Pei-Yi Lin",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.1",
+    "node-sass": "^6.0.1",
     "parcel": "^2.0.0-beta.1",
     "sass": "^1.34.0"
   }

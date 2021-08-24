@@ -59,28 +59,11 @@
     font-weight: 300;
     & > * {
       margin: 0 2rem;
-    }
-    &__class {
-      list-style: none;
-      position: absolute;
-      top: 0;
-      left: 52%;
-      padding: 0 1.5rem;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      z-index: 50;
-      visibility: hidden;
-      height: 0;
-      opacity: 0;
-      transition: all 0.3s cubic-bezier(0.58, 0.05, 0.39, 1);
-      &.hidden {
-        display: none;
-      }
-      .nav_item:not(:last-child) {
-        display: block;
-        border-bottom: 2px solid $color-primary;
+      @include respond(tab-port) {
+        margin: 0 1.5rem;
       }
     }
+
     .nav_item {
       .classes__checkbox {
         display: none;
